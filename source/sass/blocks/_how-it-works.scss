@@ -35,7 +35,7 @@
 }
 
 .how-it-works__item::before {
-  content: '';
+  content: " ";
 
   display: block;
   flex: 0 0 60px;
@@ -52,4 +52,3 @@
   font-family: $arial;
   color: $text-black;
 }
-

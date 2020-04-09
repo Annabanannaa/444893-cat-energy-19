@@ -36,7 +36,7 @@
   border-radius: 50%;
 
   &::before {
-    content: '';
+    content: "";
 
     position: absolute;
     top: 50%;
@@ -72,6 +72,7 @@
 
   margin-bottom: 24px;
 }
+
 .food-type__link {
   color: $title-black;
   text-transform: uppercase;
@@ -85,7 +86,6 @@
   padding-top: 20px;
 
   &::after {
-    content: '';
 
     display: block;
     height: 12px;
@@ -93,7 +93,7 @@
 
     margin-left: 14px;
 
-    background-image: url('../img/icon-right-arrow-long.svg');
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
   }
 }
