@@ -3,28 +3,31 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
-
 <body>
-
 <header class="page-header">
   <a class="page-header__logo" href="">
-    <img class="page-header__logo-img" src="https://via.placeholder.com/150x150" alt="логотип Кэт энерджи" height="40"
-        width="190">
+    <img class="page-header__logo-img" src="/img/logo-mobile.svg" alt="логотип Кэт энерджи" height="40"
+         width="190">
   </a>
+
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <div class="main-nav__wrapper">
+    <div class="main-nav__wrapper main-nav__wrapper--open">
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
-          <a href="#">Главная</a>
+          <a class="site-list__link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html">Каталог продуции</a>
+          <a class="site-list__link" href="catalog.html">Каталог продуции</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">Подбор программы</a>
+          <a class="site-list__link" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </div>
@@ -112,7 +115,7 @@
 
 <footer class="page-footer">
   <a class="page-footer__logo">
-    <img src="https://via.placeholder.com/150x150" height="24" width="128" alt="логотип подвал">
+    <img src="/img/logo-footer.svg" height="24" width="128" alt="логотип подвал">
   </a>
   <ul class="page-footer__social social">
     <li class="social__item">

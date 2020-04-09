@@ -1,0 +1,55 @@
+.how-it-works {
+  margin-bottom: 22px;
+}
+
+.how-it-works__title {
+  margin-bottom: 35px;
+
+  color: $title-black;
+}
+
+.how-it-works__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &--contains::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-position: center;
+  }
+
+  &--produced::before {
+    background-image: url("../img/advantage-powder@1x.png");
+    background-position: center;
+  }
+
+  &--meals::before {
+    background-image: url("../img/advantage-dining@1x.png");
+    background-position: center;
+  }
+
+  &--changes::before {
+    background-image: url("../img/advantage-clock@1x.png");
+    background-position: center;
+  }
+}
+
+.how-it-works__item::before {
+  content: '';
+
+  display: block;
+  flex: 0 0 60px;
+  height: 60px;
+  width: 60px;
+
+  margin-right: 20px;
+
+  background-color: $main-green;
+}
+
+.how-it-works__description {
+  font-size: 14px;
+  font-family: $arial;
+  color: $text-black;
+}
+
