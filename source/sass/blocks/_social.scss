@@ -12,6 +12,8 @@
 }
 
 .social__link {
+  @include reset-list;
+
   display: block;
   height: 20px;
   width: 22px;

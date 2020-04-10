@@ -3,6 +3,8 @@
 }
 
 .main-nav__toggle {
+  @include reset-button;
+
   font-size: 0;
 }
 

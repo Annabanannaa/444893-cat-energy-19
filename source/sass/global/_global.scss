@@ -5,56 +5,9 @@ body {
   background: $white;
 
   font-family: $main-font;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  font-weight: 400;
-  line-height: 1;
-}
-
-p {
-  margin: 0;
   line-height: 1.29;
-}
-
-span {
-  line-height: 1.29;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-table {
-  border: none;
-  border-collapse: collapse;
-
-  td {
-    padding: 0;
-  }
-}
-
-button {
-  margin: 0;
-  padding: 0;
-
-  border: none;
-  background: none;
 }
 
 a {
   text-decoration: none;
-}
-
-.main-title {
-  font-size: 36px;
 }
