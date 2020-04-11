@@ -1,0 +1,23 @@
+.main-nav__wrapper {
+  display: none;
+}
+
+.main-nav__toggle {
+  @include reset-button;
+
+  font-size: 0;
+}
+
+.main-nav__toggle::before {
+  content: "";
+
+  position: relative;
+  top: -13px;
+
+  display: block;
+  width: 25px;
+  height: 2px;
+
+  background-color: #222222;
+  box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
+}

@@ -1,0 +1,35 @@
+.social {
+  display: flex;
+  justify-content: center;
+
+  padding: 22px 0 21px;
+}
+
+.social__item {
+  & + & {
+    margin-left: 34px;
+  }
+}
+
+.social__link {
+  @include reset-list;
+
+  display: block;
+  height: 20px;
+  width: 22px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--vk {
+    background-image: url("../img/icon-vk.svg");
+  }
+
+  &--inst {
+    background-image: url("../img/icon-insta.svg");
+  }
+
+  &--facebook {
+    background-image: url("../img/icon-fb.svg");
+  }
+}

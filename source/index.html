@@ -3,28 +3,32 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
 
 <header class="page-header">
   <a class="page-header__logo" href="">
-    <img class="page-header__logo-img" src="https://via.placeholder.com/150x150" alt="логотип Кэт энерджи" height="40"
-        width="190">
+    <img class="page-header__logo-img" src="/img/logo-mobile.svg" alt="логотип Кэт энерджи" height="40" width="190">
   </a>
+
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <div class="main-nav__wrapper">
+    <div class="main-nav__wrapper main-nav__wrapper--open">
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
-          <a href="#">Главная</a>
+          <a class="site-list__link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html">Каталог продуции</a>
+          <a class="site-list__link" href="catalog.html">Каталог продуции</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">Подбор программы</a>
+          <a class="site-list__link" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </div>
@@ -35,25 +39,35 @@
 
   <h1 class="visually-hidden">Cat energy - функциональное питанеи для котов</h1>
 
-  <section class="banner">
-    <h2 class="banner__header">Функциональное
-      питание для котов</h2>
-    <p class="banner__slogan">Занялся собой? Займись котом!</p>
-    <img class="banner__img" src="https://via.placeholder.com/150x150" alt="баннер" height="270" width="280">
-    <button class="banner__btn" type="button">Подобрать программу</button>
+  <section class="banner container">
+    <div class="banner__bg"></div>
+    <div class="banner__content">
+      <h2 class="banner__title main-title">Функциональное
+        питание для котов</h2>
+      <p class="banner__slogan">Занялся собой? Займись котом!</p>
+      <img class="banner__img" src="/img/index-can-mobile@1x.png" alt="баннер" height="270" width="280">
+      <button class="banner__btn button" type="button">Подобрать программу</button>
+    </div>
   </section>
 
-  <section class="food-type">
+  <section class="food-type container">
     <h2 class="visually-hidden">Типы питания</h2>
     <ul class="food-type__list">
-      <li class="food-type__item food-type__item--slimming">
-        <h3 class="food-type__title">Похудение</h3>
+      <li class="food-type__item">
+        <div class="food-type__head">
+          <span class="food-type__icon food-type__icon--slim"></span>
+          <h3 class="food-type__title">Похудение</h3>
+        </div>
         <p class="food-type__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
           Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a class="food-type__link" href="#">Каталог Slim</a>
       </li>
-      <li class="food-type__item food-type__item--mass">
-        <h3 class="food-type__title">Набор массы</h3>
+
+      <li class="food-type__item">
+        <div class="food-type__head">
+          <span class="food-type__icon food-type__icon--pro"></span>
+          <h3 class="food-type__title">Набор массы</h3>
+        </div>
         <p class="food-type__description">Заработать авторитет среди дворовых котов и даже собак?
           Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
         <a class="food-type__link" href="#">Каталог Pro</a>
@@ -61,8 +75,8 @@
     </ul>
   </section>
 
-  <section class="how-it-works">
-    <h2 class="how-it-works__title">Как это работает</h2>
+  <section class="how-it-works container">
+    <h2 class="how-it-works__title main-title">Как это работает</h2>
     <ul class="how-it-works__list">
       <li class="how-it-works__item how-it-works__item--contains">
         <p class="how-it-works__description">Функциональное питание содержит только полезные питательные вещества.</p>
@@ -80,7 +94,7 @@
     </ul>
   </section>
 
-  <section class="example">
+  <section class="example container">
     <h2 class="example__title">Живой пример</h2>
     <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
       Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в
@@ -111,7 +125,7 @@
     </div>
   </section>
 
-  <section class="contacts">
+  <section class="contacts container">
     <span class="contacts__title">приглашаем к сотрудничеству дилеров!</span>
     <span class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
   </section>
@@ -123,7 +137,7 @@
 
 <footer class="page-footer">
   <a class="page-footer__logo">
-    <img src="https://via.placeholder.com/150x150" height="24" width="128" alt="логотип подвал">
+    <img src="/img/logo-footer.svg" height="24" width="128" alt="логотип подвал">
   </a>
   <ul class="page-footer__social social">
     <li class="social__item">

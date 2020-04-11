@@ -1,0 +1,42 @@
+.page-footer {
+  padding: 39px 20px 22px;
+  background-color: $gray;
+}
+
+.page-footer__logo {
+  display: block;
+  margin-bottom: 31px;
+
+  text-align: center;
+}
+
+.page-footer__social {
+  @include reset-list;
+
+  border-top: 1px solid $border-grey;
+  border-bottom: 1px solid $border-grey;
+}
+
+.page-footer__academy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 22px;
+}
+
+.page-footer__academy-label {
+  font-family: $arial;
+  color: $text-black;
+  font-size: 16px;
+}
+
+.page-footer__academy-logo {
+  display: block;
+  height: 34px;
+  width: 27px;
+
+  background-image: url("../img/htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

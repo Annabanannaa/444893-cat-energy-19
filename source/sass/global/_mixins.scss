@@ -1,0 +1,27 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin reset-title {
+  margin: 0;
+  font-weight: 400;
+  line-height: 1;
+}
+
+@mixin reset-button {
+  padding: 0;
+
+  border: none;
+  background: none;
+}
+
+@mixin reset-table {
+  border: none;
+  border-collapse: collapse;
+
+  td {
+    padding: 0;
+  }
+}
