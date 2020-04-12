@@ -1,3 +1,96 @@
 .program-form {
-  border: none; // чтобы блок не был пустым
+  margin-bottom: 34px;
+}
+
+.program-form__title {
+  @include reset-title;
+
+  font-size: 36px;
+  padding: 30px 20px 35px;
+}
+
+.program-form__description {
+  padding: 0 20px;
+  margin-bottom: 39px;
+
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.program-form__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.program-form__label {
+  font-size: 16px;
+  color: $title-black;
+  white-space: nowrap;
+  text-transform: uppercase;
+
+  margin-right: 16px;
+}
+
+.program-form__radio {
+  margin-right: 16px;
+}
+
+.program-form__field {
+  padding: 10px 0 10px 16px;
+  flex-grow: 1;
+
+  border: 1px solid $border-grey;
+
+  &::placeholder {
+    text-transform: uppercase;
+    color: $text-black;
+  }
+}
+
+.program-form__block {
+  margin-bottom: 31px;
+
+  &--bordered {
+    border-bottom: 1px solid $border-light-grey;
+    border-top: 1px solid $border-light-grey;
+
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
+.program-form__subtitle {
+  font-size: 24px;
+  color: $title-black;
+  font-weight: 400;
+}
+
+.program-form__comment {
+  height: 150px;
+  width: 100%;
+
+  box-sizing: border-box;
+  padding: 10px 14px;
+  resize: none;
+  border: 1px solid $border-grey;
+
+  &::placeholder {
+    text-transform: uppercase;
+    color: $text-black;
+  }
+}
+
+.program-form__checkbox {
+  margin-right: 16px;
+}
+
+.program-form__required {
+  display: block;
+  margin-top: 23px;
+
+  font-size: 14px;
+  color: $text-black;
+  font-family: $arial;
+  text-align: center;
 }

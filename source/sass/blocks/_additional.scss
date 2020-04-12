@@ -1,3 +1,37 @@
 .additional {
   border: none; // чтобы блок не был пустым
 }
+
+.additional__title {
+  font-size: 24px;
+  padding: 30px 0;
+  border-bottom: 1px solid #ededed;
+}
+
+.additional-product {
+  padding-top: 14px;
+  padding-bottom: 17px;
+
+  border-bottom: 1px solid #ededed;
+}
+
+.additional-product__title {
+  display: block;
+
+  color: #222222;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  margin-bottom: 14px;
+}
+
+.additional-product__info {
+  display: flex;
+  justify-content: space-between;
+
+  font-family: $arial;
+  font-size: 14px;
+  color: $text-black;
+
+  margin-bottom: 14px;
+}

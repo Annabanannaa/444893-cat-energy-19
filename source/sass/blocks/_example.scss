@@ -1,3 +1,78 @@
 .example {
-  border: none; // чтобы блок не был пустым
+  background-color: $gray;
+  padding-top: 33px;
+  padding-bottom: 38px;
+}
+
+.example__title {
+  margin-bottom: 33px;
+}
+
+.example__description {
+  font-size: 14px;
+  font-family: $arial;
+
+  padding-right: 10px;
+  margin-bottom: 27px;
+}
+
+.example__result {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__result-item {
+  position: relative;
+  border: 1px solid $border-grey;
+  flex: 0 0 calc(50% - 16px);
+
+  margin-bottom: 38px;
+}
+
+.example__result-count {
+  display: block;
+
+  text-align: center;
+  font-size: 24px;
+
+  padding-top: 17px;
+  padding-bottom: 18px;
+}
+
+.example__result-label {
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+
+  width: 70%;
+  padding: 0 10px;
+
+  font-size: 14px;
+  text-align: center;
+  line-height: 1;
+
+  transform: translateX(-50%);
+  background: #f2f2f2;
+  box-sizing: border-box;
+}
+
+.example__cost {
+  display: block;
+  margin-bottom: 44px;
+
+  font-size: 14px;
+  color: $title-black;
+  text-align: center;
+}
+
+.example__range {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 35px;
+}
+
+.example__range-progress {
+  margin-right: 18px;
+  margin-left: 18px;
 }

@@ -1,3 +1,5 @@
 .main-title {
+  @include reset-title;
+
   font-size: 36px;
 }

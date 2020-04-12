@@ -18,6 +18,8 @@
 }
 
 .food-type__title {
+  @include reset-title;
+
   color: $title-black;
   font-size: 24px;
   text-transform: uppercase;
