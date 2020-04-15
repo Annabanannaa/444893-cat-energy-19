@@ -34,24 +34,24 @@
 </header>
 
 <form class="program-form">
-  <h2 class="program-form__title">Подбор программы</h2>
-  <p class="program-form__description">Заполните анкету и мы подберем
+  <h2 class="program-form__title main-title">Подбор программы</h2>
+  <p class="program-form__description">Заполните анкету и мы подберем <br>
     программу питания для вашего кота</p>
-  <div class="program-form__block">
+  <div class="program-form__block container">
     <label class="program-form__item">
       <span class="program-form__label">Имя:*</span>
-      <input required type="text" placeholder="Барсик" name="name">
+      <input class="program-form__field" required type="text" placeholder="Барсик" name="name">
     </label>
     <label class="program-form__item">
       <span class="program-form__label">Вес (кг):*</span>
-      <input required type="text" placeholder="7" name="weight">
+      <input class="program-form__field" required type="text" placeholder="7" name="weight">
     </label>
     <label class="program-form__item">
       <span class="program-form__label">Возраст (лет):</span>
-      <input type="text" placeholder="7" name="age">
+      <input class="program-form__field" type="text" placeholder="7" name="age">
     </label>
   </div>
-  <div class="program-form__block">
+  <div class="program-form__block program-form__block--bordered container">
     <label class="program-form__item">
       <input class="program-form__radio" type="radio" name="program" value="1" checked>
       <span class="program-form__label">Похудение</span>
@@ -65,22 +65,22 @@
       <span class="program-form__label">Не знаю (Нужен ваш совет)</span>
     </label>
   </div>
-  <div class="program-form__block">
+  <div class="program-form__block container">
     <h3 class="program-form__subtitle">Контактные данные (владельца кота)</h3>
     <label class="program-form__item">
       <span class="program-form__label">E-mail:*</span>
-      <input required placeholder="kuklachev@gmail.com" name="mail" type="text">
+      <input class="program-form__field" required placeholder="kuklachev@gmail.com" name="mail" type="text">
     </label>
     <label class="program-form__item">
       <span class="program-form__label">Телефон:*</span>
-      <input required placeholder="8 (960) 900-60-90" name="phone" type="text">
+      <input class="program-form__field" required placeholder="8 (960) 900-60-90" name="phone" type="text">
     </label>
   </div>
-  <div class="program-form__block">
+  <div class="program-form__block container">
     <h3 class="program-form__subtitle">Комментарий</h3>
     <textarea class="program-form__comment" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
   </div>
-  <div class="program-form__block">
+  <div class="program-form__block container">
     <h3 class="program-form__subtitle">Дополнительно</h3>
     <label class="program-form__item">
       <input class="program-form__checkbox" type="checkbox" name="sweetener" value="1">
@@ -99,18 +99,18 @@
       <span class="program-form__label">Витамины</span>
     </label>
   </div>
-  <button class="program-form__btn" type="submit">Отправить заявку</button>
-  <span class="program-form__required">* — Обязательные поля</span>
+  <div class="container">
+    <button class="program-form__btn button" type="submit">Отправить заявку</button>
+    <span class="program-form__required">* — Обязательные поля</span>
+  </div>
 </form>
 
-<section class="contacts">
+<section class="contacts contacts--catalog">
   <span class="contacts__title">приглашаем к сотрудничеству дилеров!</span>
   <span class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
 </section>
 
-<section class="map">
-
-</section>
+<section class="map"></section>
 
 <footer class="page-footer">
   <a class="page-footer__logo">

@@ -1,3 +1,28 @@
 .present {
-  border: none; // чтобы блок не был пустым
+  height: 289px;
+  background-color: $main-green;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  margin: 39px 20px 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.present__img {
+  height: 61px;
+  width: 56px;
+  fill: $white;
+
+  margin-top: 65px;
+}
+
+.present__description {
+  text-align: center;
+  color: $white;
+  margin-bottom: 43px;
 }

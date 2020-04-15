@@ -1,3 +1,26 @@
 .contacts {
-  border: none; // чтобы блок не был пустым
+  display: flex;
+  justify-content: space-between;
+
+  padding: 31px 20px 26px;
+}
+
+.contacts__title {
+  flex: 0 0 calc(50% - 5px);
+
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $title-black;
+}
+
+.contacts__address {
+  flex: 0 0 calc(50% - 5px);
+
+  font-family: $arial;
+  font-size: 14px;
+  color: $text-black;
+}
+
+.contacts--catalog {
+  background-color: $gray;
 }
