@@ -1,4 +1,4 @@
-.button-catalog-add {
+.show-more {
   padding-top: 26px;
   padding-bottom: 25px;
 
@@ -18,7 +18,7 @@
   }
 }
 
-.button-catalog-add__title {
+.show-more__title {
   font-size: 16px;
   color: $title-black;
   text-transform: uppercase;
@@ -26,7 +26,7 @@
   margin-top: 25px;
 }
 
-.button-catalog-add__description {
+.show-more__description {
   display: block;
 
   font-size: 12px;
@@ -36,7 +36,7 @@
   margin-bottom: 22px;
 }
 
-.button-catalog-add__btn {
+.show-more__btn {
   background-color: $gray;
   color: $text-black;
 }
