@@ -11,8 +11,12 @@
 </head>
 <body>
 <header class="page-header">
-  <a class="page-header__logo" href="">
-    <img class="page-header__logo-img" src="/img/logo-mobile.svg" alt="логотип Кэт энерджи" height="40" width="190">
+  <a class="page-header__logo-link" href="">
+    <picture>
+      <source media="(min-width: 1200px)" srcset="/img/logo-desktop.svg">
+      <source media="(min-width: 768px)" srcset="/img/logo-tablet.svg">
+      <img class="page-header__logo" src="/img/logo-mobile.svg" alt="логотип Кэт энерджи" height="100%" width="100%">
+    </picture>
   </a>
 
   <nav class="main-nav">
@@ -20,13 +24,13 @@
     <div class="main-nav__wrapper main-nav__wrapper--open">
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
-          <a class="site-list__link" href="index.html">Главная</a>
+          <a class="site-list__link site-list__link--black" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="catalog.html">Каталог продуции</a>
+          <a class="site-list__link site-list__link--black" href="catalog.html">Каталог продуции</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Подбор программы</a>
+          <a class="site-list__link site-list__link--black" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </div>
@@ -35,37 +39,39 @@
 
 <form class="program-form">
   <h2 class="program-form__title main-title">Подбор программы</h2>
-  <p class="program-form__description">Заполните анкету и мы подберем <br>
+  <p class="program-form__description program-form__container">Заполните анкету и мы подберем <br>
     программу питания для вашего кота</p>
-  <div class="program-form__block container">
-    <label class="program-form__item">
-      <span class="program-form__label">Имя:*</span>
-      <input class="program-form__field" required type="text" placeholder="Барсик" name="name">
-    </label>
-    <label class="program-form__item">
-      <span class="program-form__label">Вес (кг):*</span>
-      <input class="program-form__field" required type="text" placeholder="7" name="weight">
-    </label>
-    <label class="program-form__item">
-      <span class="program-form__label">Возраст (лет):</span>
-      <input class="program-form__field" type="text" placeholder="7" name="age">
-    </label>
+  <div class="program-form__wrapper program-form__container">
+    <div class="program-form__block program-form__block--width">
+      <label class="program-form__item">
+        <span class="program-form__label">Имя:*</span>
+        <input class="program-form__field" required type="text" placeholder="Барсик" name="name">
+      </label>
+      <label class="program-form__item">
+        <span class="program-form__label">Вес (кг):*</span>
+        <input class="program-form__field" required type="text" placeholder="7" name="weight">
+      </label>
+      <label class="program-form__item">
+        <span class="program-form__label">Возраст (лет):</span>
+        <input class="program-form__field" type="text" placeholder="7" name="age">
+      </label>
+    </div>
+    <div class="program-form__block program-form__block--bordered program-form__block--width">
+      <label class="program-form__item">
+        <input class="program-form__radio" type="radio" name="program" value="1" checked>
+        <span class="program-form__label">Похудение</span>
+      </label>
+      <label class="program-form__item">
+        <input class="program-form__radio" type="radio" name="program" value="2">
+        <span class="program-form__label">Набор массы</span>
+      </label>
+      <label class="program-form__item">
+        <input class="program-form__radio" type="radio" name="program" value="3">
+        <span class="program-form__label">Не знаю (Нужен ваш совет)</span>
+      </label>
+    </div>
   </div>
-  <div class="program-form__block program-form__block--bordered container">
-    <label class="program-form__item">
-      <input class="program-form__radio" type="radio" name="program" value="1" checked>
-      <span class="program-form__label">Похудение</span>
-    </label>
-    <label class="program-form__item">
-      <input class="program-form__radio" type="radio" name="program" value="2">
-      <span class="program-form__label">Набор массы</span>
-    </label>
-    <label class="program-form__item">
-      <input class="program-form__radio" type="radio" name="program" value="3">
-      <span class="program-form__label">Не знаю (Нужен ваш совет)</span>
-    </label>
-  </div>
-  <div class="program-form__block container">
+  <div class="program-form__block program-form__container">
     <h3 class="program-form__subtitle">Контактные данные (владельца кота)</h3>
     <label class="program-form__item">
       <span class="program-form__label">E-mail:*</span>
@@ -76,40 +82,41 @@
       <input class="program-form__field" required placeholder="8 (960) 900-60-90" name="phone" type="text">
     </label>
   </div>
-  <div class="program-form__block container">
+  <div class="program-form__block program-form__container">
     <h3 class="program-form__subtitle">Комментарий</h3>
     <textarea class="program-form__comment" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
   </div>
-  <div class="program-form__block container">
+  <div class="program-form__block program-form__container">
     <h3 class="program-form__subtitle">Дополнительно</h3>
-    <label class="program-form__item">
-      <input class="program-form__checkbox" type="checkbox" name="sweetener" value="1">
-      <span class="program-form__label">Сахарозаменитель</span>
-    </label>
-    <label class="program-form__item">
-      <input class="program-form__checkbox" type="checkbox" name="water" value="2">
-      <span class="program-form__label">Питьевая вода</span>
-    </label>
-    <label class="program-form__item">
-      <input class="program-form__checkbox" type="checkbox" name="milk" value="3">
-      <span class="program-form__label">Молоко</span>
-    </label>
-    <label class="program-form__item">
-      <input class="program-form__checkbox" type="checkbox" name="vitamins" value="4">
-      <span class="program-form__label">Витамины</span>
-    </label>
+    <div class="program-form__extra">
+      <label class="program-form__item program-form__extra-item">
+        <input class="program-form__checkbox" type="checkbox" name="sweetener" value="1">
+        <span class="program-form__label">Сахарозаменитель</span>
+      </label>
+      <label class="program-form__item program-form__extra-item">
+        <input class="program-form__checkbox" type="checkbox" name="water" value="2">
+        <span class="program-form__label">Питьевая вода</span>
+      </label>
+      <label class="program-form__item program-form__extra-item">
+        <input class="program-form__checkbox" type="checkbox" name="milk" value="3">
+        <span class="program-form__label">Молоко</span>
+      </label>
+      <label class="program-form__item program-form__extra-item">
+        <input class="program-form__checkbox" type="checkbox" name="vitamins" value="4">
+        <span class="program-form__label">Витамины</span>
+      </label>
+    </div>
   </div>
-  <div class="container">
+  <div class="program-form__container program-form__extra">
     <button class="program-form__btn button" type="submit">Отправить заявку</button>
     <span class="program-form__required">* — Обязательные поля</span>
   </div>
 </form>
 
-<section class="contacts contacts--catalog">
-  <span class="contacts__title">приглашаем к сотрудничеству дилеров!</span>
-  <span class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+<section class="contacts contacts--gray">
+  <span class="contacts__title">приглашаем к&nbsp;сотрудничеству дилеров!</span>
+  <span class="contacts__address">ул. Большая <br> Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></span>
 </section>
-
 <section class="map"></section>
 
 <footer class="page-footer">
@@ -118,17 +125,20 @@
   </a>
   <ul class="page-footer__social social">
     <li class="social__item">
-      <a class="social__link social__link--vk" href="#">
+      <a class="social__link social__link--vk" href="https://vk.com/">
+        <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 12"><path d="M17.6 12c-.3 0-.9-.1-1.5-.5-.5-.3-.9-.7-1.3-1.2-.3-.3-.9-.9-1.1-.9-.2.1-.4.7-.3 1.2 0 .1 0 .6-.3.9-.3.3-.8.4-.9.4h-1.4c-.7 0-3.2-.2-5.4-2.3C2.5 7.1.2 2.2.1 2 0 1.6-.1 1.2.2.9s.8-.4 1-.4h3.1c.1 0 .4.1.7.3.3.2.4.5.5.6.7 1.5 1.5 2.8 2.6 4 .1-.4.2-1.4.1-2.3 0-.4-.1-.8-.2-1-.1-.1-.3-.2-.5-.2l-.6-.5c0-.5.5-.9.9-1.1.5-.2 1.3-.3 2.3-.3h.5c.9 0 1.2.1 1.6.1 1.2.3 1.2 1.3 1.1 2.5v1.6c0 .3 0 .8.1 1 .2-.1.6-.5 1.5-1.9.6-.9 1-1.9 1.1-2.1.1-.3.4-.7 1.2-.7h3.4c.7 0 1.2.2 1.3.7.2.5.1 1.3-1.7 3.5-.3.3-.5.6-.7.9-.5.4-.9 1-.9 1.1s.5.5.9.9c1.1.9 1.9 1.7 2.2 2.3.4.6.3 1 .2 1.3-.3.7-1.2.7-1.4.8h-2.8-.1zm-3.9-3.7c.7 0 1.2.6 1.8 1.2.4.4.7.8 1.1 1 .5.3 1 .3 1 .3h2.9c.1 0 .3-.1.4-.1 0 0 0-.1-.1-.1-.3-.5-1-1.3-2-2.1-.9-.7-1.3-1.1-1.4-1.7 0-.6.4-1.1 1.2-2.1.2-.2.4-.5.7-.8 1.1-1.4 1.4-2 1.5-2.3h-3.9c0 .4-.5 1.5-1.1 2.4-1.4 2.1-2 2.4-2.5 2.4-.1 0-.3 0-.4-.1-.7-.4-.7-1.4-.7-2.1V2.6c.1-1.3 0-1.3-.3-1.4-.3-.1-.5-.1-1.4-.1H10c-.5 0-1 0-1.4.1l.2.2c.4.5.4 1.5.4 1.7.1 1.3 0 2.9-.7 3.3-.1 0-.2.1-.4.1-.6 0-1.3-.7-2.5-2.5C5 2.9 4.5 1.8 4.5 1.8s0-.1-.1-.1-.2-.1-.2-.1h-3c.4.9 2.5 5 4.8 7.2 2 1.9 4.3 2 4.7 2h1.4s.2 0 .2-.1v-.1c0-.2 0-2 1.2-2.3h.2z"/></svg>
         <span class="visually-hidden">Вконтакте</span>
       </a>
     </li>
     <li class="social__item">
-      <a class="social__link social__link--inst" href="#">
+      <a class="social__link social__link--inst" href="https://www.instagram.com/">
+        <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.1 16"><path d="M11.8 1C13.6 1 15 2.4 15 4.2v7.7c0 1.7-1.4 3.1-3.1 3.1H4.2C2.4 15 1 13.6 1 11.8V4.2C1 2.4 2.4 1 4.2 1h7.6m0-1H4.2C1.9 0 0 1.9 0 4.2v7.7C0 14.1 1.9 16 4.2 16h7.7c2.3 0 4.2-1.9 4.2-4.2V4.2C16 1.9 14.1 0 11.8 0z"/><path class="st0" d="M8 4.9c1.7 0 3.1 1.4 3.1 3.1S9.7 11.1 8 11.1 4.9 9.7 4.9 8 6.3 4.9 8 4.9m0-1C5.7 3.9 3.9 5.7 3.9 8s1.8 4.1 4.1 4.1 4.1-1.8 4.1-4.1S10.3 3.9 8 3.9z"/><circle class="st0" cx="12.3" cy="3.7" r=".9"/></svg>
         <span class="visually-hidden">Инстаграмм</span>
       </a>
     </li>
     <li class="social__item">
       <a class="social__link social__link--facebook" href="#">
+        <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 19"><path d="M7.1 19H2v-8.8H0V5.8h1.9c-.1-2 .2-3.4 1.1-4.4C3.8.5 5 .1 6.5 0H10v4.2H7.2c-.1.2-.2.8-.2 1.6h3v4.4H7.1V19zm-4-1h2.8V9.1h2.9V6.8H5.9v-.5c0-1.4 0-2.6.7-3.1l.1-.1h2.1V1H6.5c-1.2.1-2 .4-2.6 1-.8.8-1 2.3-.8 4.2l.1.6H1.1v2.3h2V18z"/></svg>
         <span class="visually-hidden">Фейсбук</span>
       </a>
     </li>

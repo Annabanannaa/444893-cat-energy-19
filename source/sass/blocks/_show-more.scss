@@ -6,24 +6,31 @@
 
   text-align: center;
 
-  &::before {
-    content: "";
-    display: block;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    border: 1px solid $gray;
+    padding-top: 55px;
+  }
 
-    margin: 0 auto;
-    height: 31px;
-    width: 31px;
-
-    background-image: url("../img/icon-plus-mobile.svg");
+  @media (min-width: $desktop-width) {
+    padding: 55px 37px 40px;
   }
 }
 
 .show-more__title {
   font-size: 16px;
+  font-weight: 500;
   color: $title-black;
   text-transform: uppercase;
 
   margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-top: 50px;
+  }
 }
 
 .show-more__description {
@@ -34,9 +41,46 @@
   color: $text-black;
 
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    margin-top: 28px;
+  }
 }
 
 .show-more__btn {
   background-color: $gray;
   color: $text-black;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+  }
+}
+
+.show-more__content {
+  width: 187px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    width: 167px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+
+    margin: 0 auto;
+    height: 31px;
+    width: 31px;
+
+    background-image: url("../img/icon-plus-mobile.svg");
+
+    @media (min-width: $tablet-width) {
+      height: 61px;
+      width: 61px;
+
+      background-image: url("../img/icon-plus.svg");
+      opacity: 0.2;
+    }
+  }
 }

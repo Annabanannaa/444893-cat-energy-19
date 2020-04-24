@@ -1,8 +1,36 @@
+.site-list {
+  @include reset-list();
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .site-list__link {
   font-weight: 500;
   font-size: 20px;
   color: $title-black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 16px 15px;
+
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+
+    font-size: 20px;
+  }
+
+  &--black {
+    @media (min-width: $desktop-width) {
+      color: $text-black;
+    }
+  }
 }
 
 .site-list__item {
@@ -10,4 +38,13 @@
 
   text-align: center;
   border-top: 1px solid $border-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 24px 0;
+    border-top: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 20px;
+  }
 }

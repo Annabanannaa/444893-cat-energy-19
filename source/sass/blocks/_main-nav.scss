@@ -1,11 +1,28 @@
 .main-nav__wrapper {
   display: none;
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    display: block;
+  }
+
+  &--open {
+    display: block;
+  }
 }
 
 .main-nav__toggle {
-  @include reset-button;
+  position: absolute;
+  top: 38px;
+  right: 20px;
 
+  @include reset-button;
   font-size: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__toggle::before {

@@ -1,20 +1,57 @@
 .program-form {
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 160px;
+  }
+}
+
+.program-form__container {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 .program-form__title {
   @include reset-title;
 
-  font-size: 36px;
   padding: 30px 20px 35px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 .program-form__description {
-  padding: 0 20px;
   margin-bottom: 39px;
 
   text-transform: uppercase;
   font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-top: 53px;
+  }
+}
+
+.program-form__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .program-form__item {
@@ -30,6 +67,10 @@
   text-transform: uppercase;
 
   margin-right: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .program-form__radio {
@@ -46,6 +87,10 @@
     text-transform: uppercase;
     color: $text-black;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 20px;
+  }
 }
 
 .program-form__block {
@@ -55,8 +100,24 @@
     border-bottom: 1px solid $border-light-grey;
     border-top: 1px solid $border-light-grey;
 
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding: 21px 20px;
+    margin: 0 -20px;
+
+    @media (min-width: $tablet-width) {
+      border: 1px solid $border-light-grey;
+      margin: 0;
+    }
+  }
+
+  &--width {
+    @media (min-width: $desktop-width) {
+      flex: 0 0 calc(50% - 40px);
+      max-width: calc(50% - 40px);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 70px;
   }
 }
 
@@ -64,13 +125,30 @@
   font-size: 24px;
   color: $title-black;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+  }
+}
+
+.program-form__extra {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.program-form__extra-item {
+  @media (min-width: $tablet-width) {
+    flex: 0 0 calc(50% - 30px);
+  }
 }
 
 .program-form__comment {
   height: 150px;
   width: 100%;
 
-  box-sizing: border-box;
   padding: 10px 14px;
   resize: none;
   border: 1px solid $border-grey;
@@ -93,4 +171,15 @@
   color: $text-black;
   font-family: $arial;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    flex: 0 0 calc(50% - 30px);
+  }
+}
+
+.program-form__btn {
+  @media (min-width: $tablet-width) {
+    flex: 0 0 calc(50% - 30px);
+  }
 }
