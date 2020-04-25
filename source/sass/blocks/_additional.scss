@@ -1,5 +1,47 @@
+.additional {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 100px;
+    margin-bottom: 86px;
+  }
+}
+
 .additional__title {
   font-size: 24px;
   padding: 30px 0;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid $border-light-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 71px 0;
+    border: none;
+
+    font-size: 36px;
+
+    & + & {
+      border-top: 1px solid $border-light-grey;
+    }
+  }
+}
+
+.additional__wrapper {
+  @media (min-width: $tablet-width) {
+    border: 1px solid $border-light-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex: 1 1 70%;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.additional__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }

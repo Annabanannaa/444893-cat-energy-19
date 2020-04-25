@@ -1,7 +1,6 @@
 .button {
   @include reset-button;
-
-  height: 40px;
+  padding: 13px 25px 12px;
   width: 100%;
 
   color: $white;
@@ -10,4 +9,8 @@
   text-transform: uppercase;
 
   background-color: $main-green;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }

@@ -2,4 +2,8 @@
   @include reset-title;
 
   font-size: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
 }

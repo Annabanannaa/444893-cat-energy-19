@@ -8,8 +8,22 @@ body {
   line-height: 1.29;
 
   box-sizing: border-box;
+  overflow-x: hidden;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $tablet-width) {
+    line-height: 1.5;
+  }
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
