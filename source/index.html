@@ -8,6 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -21,15 +22,15 @@
     </picture>
   </a>
 
-  <nav class="main-nav">
+  <nav class="main-nav main-nav--closed main-nav--nojs">
     <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <div class="main-nav__wrapper main-nav__wrapper--open">
+    <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
           <a class="site-list__link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="catalog.html">Каталог продуции</a>
+          <a class="site-list__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="site-list__item">
           <a class="site-list__link" href="form.html">Подбор программы</a>
@@ -54,7 +55,7 @@
       <picture>
         <source media="(min-width: 1200px)" srcset="img/index-can-desktop@1x.png">
         <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-        <img src="img/index-can-mobile@1x.png" alt="питание для котов">
+        <img class="banner__img" src="img/index-can-mobile@1x.png" alt="питание для котов">
       </picture>
 
       <button class="banner__btn button" type="button">Подобрать программу</button>
@@ -72,10 +73,10 @@
         <a class="food-type__link" href="#">Каталог Slim</a>
       </li>
 
-      <li class="food-type__item">
+      <li class="food-type__item food-type__item--pro">
         <span class="food-type__icon food-type__icon--pro"></span>
         <h3 class="food-type__title">Набор массы</h3>
-        <p class="food-type__description">Заработать авторитет среди дворовых котов и даже собак?
+        <p class="food-type__description ">Заработать авторитет среди дворовых котов и&nbsp;даже собак?
           Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
         <a class="food-type__link" href="#">Каталог Pro</a>
       </li>
@@ -128,7 +129,11 @@
           <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
           <img class="example__before" src="img/before-mobile@1x.png" alt="было">
         </picture>
-        <!--<img class="example__after" width="50%" src="" alt="стало">-->
+        <!--<picture>-->
+          <!--<source media="(min-width: 1200px)" srcset="img/after-desktop@1x.png">-->
+          <!--<source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">-->
+          <!--<img class="example__after" src="img/after-mobile@1x.png" alt="стало">-->
+        <!--</picture>-->
       </div>
       <div class="example__range">
         <span class="example__range-label">Было</span>

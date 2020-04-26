@@ -5,7 +5,7 @@
   padding: 31px 20px 26px;
 
   @media (min-width: $tablet-width) {
-    padding: 31px 70px 26px;
+    padding: 65px 70px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,6 +40,7 @@
     flex-basis: 154px;
 
     font-size: 20px;
+    line-height: 1.25;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,6 +54,7 @@
   font-family: $arial;
   font-size: 14px;
   color: $text-black;
+  line-height: 1.43;
 
   @media (min-width: $tablet-width) {
     text-align: right;

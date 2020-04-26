@@ -14,8 +14,6 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 17px 16px 15px;
-
     font-size: 18px;
     font-weight: 400;
   }
@@ -40,11 +38,17 @@
   border-top: 1px solid $border-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 24px 0;
+    padding: 0;
     border-top: none;
+
+    & + & {
+      margin-left: 40px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 0 20px;
+    & + & {
+      margin-left: 34px;
+    }
   }
 }

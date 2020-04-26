@@ -2,7 +2,11 @@
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 105px;
+    margin-bottom: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 93px;
   }
 }
 
@@ -12,7 +16,7 @@
   color: $title-black;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 63px;
+    margin-bottom: 73px;
   }
 }
 
@@ -23,11 +27,17 @@
     display: flex;
     flex-wrap: wrap;
 
-    margin: -68px -73px;
+    margin: -64px -69px;
+    padding-bottom: 40px;
+
+    border-bottom: 1px solid $border-light-grey;
   }
 
   @media (min-width: $desktop-width) {
-    margin: -36px -42px;
+    margin: -36px -40px;
+    padding-bottom: 0;
+
+    border: none;
   }
 }
 
@@ -41,7 +51,7 @@
     display: block;
 
     width: 245px;
-    margin: 68px 73px;
+    margin: 64px 69px;
 
     counter-increment: myCounter;
 
@@ -57,10 +67,14 @@
       line-height: 0.73;
       color: $gray;
     }
+
+    &:first-child::after {
+      right: 15px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    margin: 36px 42px;
+    margin: 36px 40px;
   }
 
   &::before {
@@ -101,6 +115,8 @@
 }
 
 .how-it-works__description {
+  margin: 0;
+
   font-size: 14px;
   font-family: $arial;
   color: $text-black;
@@ -109,9 +125,12 @@
     position: relative;
     z-index: 1;
 
-    font-size: 16px;
+    margin-top: 34px;
 
-    margin-top: 37px;
-    margin-bottom: 0;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 31px;
   }
 }

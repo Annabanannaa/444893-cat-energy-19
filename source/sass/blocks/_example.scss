@@ -19,20 +19,22 @@
   margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 63px;
   }
 }
 
 .example__description {
+  padding-right: 10px;
+  margin-top: 0;
+  margin-bottom: 27px;
+
   font-size: 14px;
   font-family: $arial;
 
-  padding-right: 10px;
-  margin-bottom: 27px;
-
   @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+
     font-size: 16px;
-    margin-bottom: 56px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,6 +56,7 @@
 .example__result {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     flex: 0 0 calc(50% - 16px);
@@ -65,8 +68,6 @@
   position: relative;
   border: 1px solid $border-grey;
   flex: 0 0 calc(50% - 16px);
-
-  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     & + & {
@@ -81,20 +82,20 @@
 
 .example__result-count {
   display: block;
+  padding-top: 12px;
+  padding-bottom: 18px;
 
   text-align: center;
   font-size: 24px;
   text-transform: uppercase;
-
-  padding-top: 17px;
-  padding-bottom: 18px;
+  line-height: 1;
 
   @media (min-width: $tablet-width) {
-    font-size: 30px;
-    width: 162px;
-
-    padding-top: 22px;
+    padding-top: 19px;
     padding-bottom: 22px;
+
+    font-size: 30px;
+    width: 155px;
   }
 
   @media (min-width: $desktop-width) {
@@ -110,7 +111,8 @@
   width: 70%;
   padding: 0 10px;
 
-  font-size: 14px;
+  font-family: $arial;
+  font-size: 12px;
   text-align: center;
   line-height: 1;
 
@@ -119,25 +121,30 @@
 
   @media (min-width: $tablet-width) {
     bottom: -6px;
-    background: $white;
+
     width: auto;
+
     white-space: nowrap;
+    font-size: 14px;
+
+    background: $white;
   }
 }
 
 .example__cost {
   display: block;
-  margin-bottom: 44px;
+  margin: 0;
 
   font-size: 14px;
   color: $title-black;
   text-align: center;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     flex: 0 0 calc(50% - 16px);
 
     margin-bottom: 0;
-    margin-top: 10px;
+    margin-top: 7px;
 
     font-size: 20px;
     text-align: right;
@@ -159,8 +166,10 @@
 }
 
 .example__changes {
+  margin: 0 -20px;
+
   @media (min-width: $tablet-width) {
-    margin-top: 50px;
+    margin: 28px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -171,17 +180,30 @@
 }
 
 .example__container {
-  flex: 0 0 calc(41% - 5px);
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .example__range {
   display: flex;
   justify-content: center;
 
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 .example__range-progress {
+  max-width: 84px;
   margin-right: 18px;
   margin-left: 18px;
+
+  input {
+    max-width: 100%;
+  }
+}
+
+.example__range-label {
+  text-transform: uppercase;
 }
