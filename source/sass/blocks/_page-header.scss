@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 11px 30px 15px;
+    padding: 23px 30px 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,7 +16,7 @@
     position: absolute;
     z-index: 10;
 
-    padding: 53px 100px 15px;
+    padding: 50px 110px 15px;
   }
 }
 
@@ -39,8 +39,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    z-index: 10;
-    top: 33px;
+    height: 62px;
+    width: 203px;
   }
 }

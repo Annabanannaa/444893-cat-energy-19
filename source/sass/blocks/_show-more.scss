@@ -12,6 +12,7 @@
     justify-content: space-between;
     border: 1px solid $gray;
     padding-top: 55px;
+    padding-bottom: 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,15 +22,21 @@
 
 .show-more__title {
   font-size: 16px;
-  font-weight: 500;
   color: $title-black;
   text-transform: uppercase;
 
-  margin-top: 25px;
+  margin-top: 22px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    margin-top: 50px;
+    margin-top: 44px;
+    line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    margin-top: 45px;
   }
 }
 
@@ -44,6 +51,12 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+    margin-top: 27px;
+    line-height: 1.15;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
     margin-top: 28px;
   }
 }
@@ -51,19 +64,20 @@
 .show-more__btn {
   background-color: $gray;
   color: $text-black;
-
-  @media (min-width: $desktop-width) {
-    font-size: 16px;
-  }
+  font-size: 16px;
 }
 
 .show-more__content {
-  width: 187px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 179px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 167px;
   }
+
 
   &::before {
     content: "";

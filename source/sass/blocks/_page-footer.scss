@@ -6,16 +6,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    padding: 60px 30px 55px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 62px 100px;
+    padding: 56px 109px;
   }
 }
 
 .page-footer__logo {
   display: block;
-  margin-bottom: 31px;
+  margin-bottom: 28px;
 
   text-align: center;
 
@@ -48,16 +50,15 @@
 
 .page-footer__academy-logo {
   display: block;
-  height: 34px;
+  height: 40px;
   width: 27px;
 
   background-image: url("../img/htmlacademy.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 
   @media (min-width: $tablet-width) {
-    height: 34px;
-    width: 34px;
-    margin-left: 10px;
+    margin-left: 23px;
   }
 }

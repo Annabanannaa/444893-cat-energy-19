@@ -1,12 +1,14 @@
 .banner {
   position: relative;
 
-  padding-top: 30px;
+  padding-top: 27px;
 
   color: $white;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    padding-top: 38px;
+
     color: $title-black;
     text-align: left;
   }
@@ -48,17 +50,19 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-
-    margin-top: 147px;
-    padding-bottom: 17px;
+    margin-top: 102px;
+    padding-bottom: 47px;
   }
 }
 
 .banner__title {
+  margin-bottom: 22px;
+
   font-weight: 400;
-  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+
     font-size: 60px;
   }
 
@@ -68,14 +72,14 @@
 }
 
 .banner__slogan {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   font-size: 14px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    margin-top: 33px;
+    margin-top: 36px;
     margin-bottom: 20px;
   }
 }
@@ -83,19 +87,34 @@
 .banner__btn {
   @media (min-width: $tablet-width) {
     position: absolute;
+    left: 87px;
+    top: 229px;
+
+    padding: 14px 28px;
     width: auto;
-    left: 118px;
-    top: 216px;
 
     @media (min-width: $desktop-width) {
       top: auto;
-      bottom: 149px;
+      left: 88px;
+      bottom: 187px;
     }
+  }
+}
+
+.banner__img {
+  @media (min-width: $desktop-width) {
+    margin-left: -36px;
+    height: 501px;
+    width: 579px;
   }
 }
 
 .banner__wrapper {
   @media (min-width: $tablet-width) {
-    padding-left: 118px;
+    padding-left: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 88px;
   }
 }

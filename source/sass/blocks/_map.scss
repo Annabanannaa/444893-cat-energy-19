@@ -3,8 +3,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  height: 380px;
+  height: 363px;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 395px;
+  }
 
   @media (min-width: $desktop-width) {
     height: 400px;

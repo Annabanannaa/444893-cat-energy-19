@@ -1,13 +1,28 @@
-.main-nav__wrapper {
-  display: none;
-  margin-top: 20px;
+.main-nav {
+  &--closed .site-list__item {
+    display: none;
 
-  @media (min-width: $tablet-width) {
-    margin-top: 0;
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &--nojs .site-list__item {
     display: block;
   }
 
-  &--open {
+  &--opened {
+    margin-top: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+    }
+  }
+}
+
+.main-nav__wrapper {
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
     display: block;
   }
 }
