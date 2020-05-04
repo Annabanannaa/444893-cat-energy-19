@@ -1,8 +1,9 @@
 .contacts {
+  z-index: 99;
   display: flex;
   justify-content: space-between;
 
-  padding: 31px 20px 26px;
+  padding: 28px 24px 24px 16px;
 
   @media (min-width: $tablet-width) {
     padding: 65px 70px 60px;
@@ -29,6 +30,7 @@
 
 .contacts__title {
   flex: 0 0 calc(50% - 5px);
+  width: calc(50% - 5px);
 
   font-size: 16px;
   text-transform: uppercase;
@@ -45,11 +47,13 @@
 
   @media (min-width: $desktop-width) {
     flex: 0 0 calc(50% - 49px);
+    width: calc(50% - 49px);
   }
 }
 
 .contacts__address {
   flex: 0 0 calc(50% - 5px);
+  width: calc(50% - 5px);
 
   font-family: $arial;
   font-size: 14px;
@@ -63,7 +67,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex: 0 0 calc(50% - 49px);
+    flex: 0 0 calc(50% - 40px);
+    width: calc(50% - 40px);
 
     text-align: left;
   }
