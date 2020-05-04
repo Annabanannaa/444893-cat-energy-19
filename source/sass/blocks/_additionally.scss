@@ -1,0 +1,32 @@
+.additionally {
+  padding: 0 20px;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 68px;
+    margin-top: 59px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.additionally__item {
+  padding: 2px 0 5px 46px;
+
+  @media (min-width: $tablet-width) {
+    flex: 0 0 calc(50% - 30px);
+    width: calc(50% - 30px);
+    padding-left: 57px;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex: 0 0 calc(25% - 59px);
+    width: calc(25% - 59px);
+  }
+}

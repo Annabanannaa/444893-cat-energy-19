@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ad9a4610-de38-4995-86cb-56e5a18c8fd6&lang=ru_RU"></script>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
     <button class="main-nav__toggle" type="button">Открыть меню</button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
+        <li class="site-list__item site-list__item--active site-list__item--white">
           <a class="site-list__link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
@@ -124,21 +124,13 @@
     </div>
     <div class="example__changes">
       <div class="example__cat">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/before-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-          <img class="example__before" src="img/before-mobile@1x.png" alt="было">
-        </picture>
-        <!--<picture>-->
-          <!--<source media="(min-width: 1200px)" srcset="img/after-desktop@1x.png">-->
-          <!--<source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">-->
-          <!--<img class="example__after" src="img/after-mobile@1x.png" alt="стало">-->
-        <!--</picture>-->
+        <div class="example__before"></div>
+        <div class="example__after"></div>
       </div>
       <div class="example__range">
         <span class="example__range-label">Было</span>
         <label class="example__range-progress">
-          <input class="example__range-input" type="range">
+          <input class="example__range-input" type="range" value="50">
         </label>
         <span class="example__range-label">Стало</span>
       </div>
@@ -149,7 +141,7 @@
     <span class="contacts__title">приглашаем к&nbsp;сотрудничеству дилеров!</span>
     <span class="contacts__address">ул. Большая <br> Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></span>
   </section>
-  <section class="map"></section>
+  <section id="map" class="map"></section>
 </main>
 
 <footer class="page-footer">
@@ -183,6 +175,7 @@
     </a>
   </div>
 </footer>
+<script src="js/script.js"></script>
 </body>
 
 </html>

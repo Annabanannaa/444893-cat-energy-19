@@ -1,11 +1,11 @@
 .additional-product {
-  padding-top: 14px;
-  padding-bottom: 17px;
+  padding-top: 12px;
+  padding-bottom: 18px;
 
   border-bottom: 1px solid #ededed;
 
   @media (min-width: $tablet-width) {
-    padding: 28px 40px;
+    padding: 22px 37px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: space-between;
 
-    padding: 15px 0;
+    padding: 15.5px 0;
   }
 }
 
@@ -24,7 +24,7 @@
   font-size: 16px;
   text-transform: uppercase;
 
-  margin-bottom: 14px;
+  margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -39,11 +39,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+
+    margin-bottom: 7px;
   }
 
   @media (min-width: $desktop-width) {
     align-items: center;
-    width: 72%;
+    width: 68.6%;
+    margin-bottom: 0;
   }
 }
 
@@ -55,12 +58,16 @@
 
 .additional-product__value {
   @media (min-width: $tablet-width) {
-    min-width: 80px;
+    min-width: 38px;
+    margin-left: 53px;
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 135px;
+    min-width: 45px;
+    margin-left: 110px;
+
+    text-align: left;
   }
 }
 
@@ -80,15 +87,15 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+    margin-top: 8px;
   }
 }
 
 .additional-product__btn {
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-  }
+  font-size: 16px;
+
 
   @media (min-width: $desktop-width) {
-    width: 22%;
+    width: 27%;
   }
 }

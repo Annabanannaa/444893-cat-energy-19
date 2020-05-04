@@ -1,0 +1,40 @@
+.comment {
+  padding: 0 20px;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 68px;
+    margin-top: 59px;
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+}
+
+
+.comment__textarea {
+  height: 150px;
+  width: 100%;
+
+  padding: 13px 13px;
+  resize: none;
+  border: 1px solid $border-grey;
+
+  &::placeholder {
+    text-transform: uppercase;
+    color: $text-black;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 175px;
+    padding: 15px 18px;
+
+    font-size: 20px;
+  }
+}

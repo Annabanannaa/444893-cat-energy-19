@@ -1,0 +1,39 @@
+.send {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+
+.send__required {
+  display: block;
+  margin-top: 23px;
+
+  font-size: 14px;
+  color: $text-black;
+  font-family: $arial;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 8px;
+    flex: 0 0 calc(50% - 30px);
+    width: calc(50% - 30px);
+
+    font-size: 16px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 15px;
+    flex: 0 0 calc(50% - 40px);
+    width: calc(50% - 40px);
+  }
+}

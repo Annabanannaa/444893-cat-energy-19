@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ad9a4610-de38-4995-86cb-56e5a18c8fd6&lang=ru_RU"></script>
 </head>
 <body>
 <header class="page-header">
@@ -24,13 +24,13 @@
     <button class="main-nav__toggle" type="button">Открыть меню</button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
+        <li class="site-list__item">
           <a class="site-list__link site-list__link--black" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link site-list__link--black" href="catalog.html">Каталог продуции</a>
+          <a class="site-list__link site-list__link--black" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item--active">
           <a class="site-list__link site-list__link--black" href="form.html">Подбор программы</a>
         </li>
       </ul>
@@ -40,9 +40,9 @@
 
 <form class="program-form">
   <h2 class="program-form__title main-title">Подбор программы</h2>
-  <p class="program-form__description program-form__container">Заполните анкету и мы подберем <br>
+  <p class="program-form__description">Заполните анкету и мы подберем <br>
     программу питания для вашего кота</p>
-  <div class="program-form__wrapper program-form__container">
+  <div class="program-form__wrapper">
     <div class="program-form__block program-form__block--width">
       <label class="program-form__item">
         <span class="program-form__label">Имя:*</span>
@@ -58,59 +58,64 @@
       </label>
     </div>
     <div class="program-form__block program-form__block--bordered program-form__block--width">
-      <label class="program-form__item">
+      <label class="program-form__item program-form__item--radio">
         <input class="program-form__radio" type="radio" name="program" value="1" checked>
-        <span class="program-form__label">Похудение</span>
+        <span class="program-form__label program-form__label--radio">Похудение</span>
       </label>
-      <label class="program-form__item">
+      <label class="program-form__item program-form__item--radio">
         <input class="program-form__radio" type="radio" name="program" value="2">
-        <span class="program-form__label">Набор массы</span>
+        <span class="program-form__label program-form__label--radio">Набор массы</span>
       </label>
-      <label class="program-form__item">
+      <label class="program-form__item program-form__item--radio">
         <input class="program-form__radio" type="radio" name="program" value="3">
-        <span class="program-form__label">Не знаю (Нужен ваш совет)</span>
+        <span class="program-form__label program-form__label--radio">Не знаю (Нужен ваш совет)</span>
       </label>
     </div>
   </div>
-  <div class="program-form__block program-form__container">
-    <h3 class="program-form__subtitle">Контактные данные (владельца кота)</h3>
-    <label class="program-form__item">
-      <span class="program-form__label">E-mail:*</span>
-      <input class="program-form__field" required placeholder="kuklachev@gmail.com" name="mail" type="text">
-    </label>
-    <label class="program-form__item">
-      <span class="program-form__label">Телефон:*</span>
-      <input class="program-form__field" required placeholder="8 (960) 900-60-90" name="phone" type="text">
-    </label>
+
+  <div class="сontact-details">
+    <h3 class="program-form__subtitle"><span class="program-form__subtitle-helper">Контактные данные (владельца кота)</span></h3>
+    <div class="сontact-details__wrapper">
+      <label class="сontact-details__item">
+        <span class="program-form__label">E-mail:*</span>
+        <input class="program-form__field" required placeholder="kuklachev@gmail.com" name="mail" type="text">
+      </label>
+      <label class="сontact-details__item">
+        <span class="program-form__label">Телефон:*</span>
+        <input class="program-form__field" required placeholder="8 (960) 900-60-90" name="phone" type="text">
+      </label>
+    </div>
   </div>
-  <div class="program-form__block program-form__container">
-    <h3 class="program-form__subtitle">Комментарий</h3>
-    <textarea class="program-form__comment" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+
+  <div class="comment">
+    <h3 class="program-form__subtitle"><span class="program-form__subtitle-helper">Комментарий</span></h3>
+    <textarea class="comment__textarea" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
   </div>
-  <div class="program-form__block program-form__container">
-    <h3 class="program-form__subtitle">Дополнительно</h3>
+
+  <div class="additionally">
+    <h3 class="program-form__subtitle"><span class="program-form__subtitle-helper">Дополнительно</span></h3>
     <div class="program-form__extra">
-      <label class="program-form__item program-form__extra-item">
+      <label class="program-form__item additionally__item">
         <input class="program-form__checkbox" type="checkbox" name="sweetener" value="1">
-        <span class="program-form__label">Сахарозаменитель</span>
+        <span class="program-form__label program-form__label--checkbox">Сахарозаменитель</span>
       </label>
-      <label class="program-form__item program-form__extra-item">
+      <label class="program-form__item additionally__item">
         <input class="program-form__checkbox" type="checkbox" name="water" value="2">
-        <span class="program-form__label">Питьевая вода</span>
+        <span class="program-form__label program-form__label--checkbox">Питьевая вода</span>
       </label>
-      <label class="program-form__item program-form__extra-item">
+      <label class="program-form__item additionally__item">
         <input class="program-form__checkbox" type="checkbox" name="milk" value="3">
-        <span class="program-form__label">Молоко</span>
+        <span class="program-form__label program-form__label--checkbox">Молоко</span>
       </label>
-      <label class="program-form__item program-form__extra-item">
+      <label class="program-form__item additionally__item">
         <input class="program-form__checkbox" type="checkbox" name="vitamins" value="4">
-        <span class="program-form__label">Витамины</span>
+        <span class="program-form__label program-form__label--checkbox">Витамины</span>
       </label>
     </div>
   </div>
-  <div class="program-form__container program-form__extra">
+  <div class="send program-form__extra">
     <button class="program-form__btn button" type="submit">Отправить заявку</button>
-    <span class="program-form__required">* — Обязательные поля</span>
+    <span class="send__required">* — Обязательные поля</span>
   </div>
 </form>
 
@@ -118,7 +123,8 @@
   <span class="contacts__title">приглашаем к&nbsp;сотрудничеству дилеров!</span>
   <span class="contacts__address">ул. Большая <br> Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></span>
 </section>
-<section class="map"></section>
+
+<section id="map" class="map"></section>
 
 <footer class="page-footer">
   <a class="page-footer__logo">
@@ -151,6 +157,7 @@
     </a>
   </div>
 </footer>
+<script src="js/script.js"></script>
 </body>
 
 </html>

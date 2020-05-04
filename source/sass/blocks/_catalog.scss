@@ -42,14 +42,14 @@
     display: flex;
     flex-flow: column;
     flex: 0 0 calc(50% - 30px);
-    max-width: calc(50% - 30px);
+    width: calc(50% - 30px);
     margin-top: 140px;
     padding: 0 38px 40px;
   }
 
   @media (min-width: $desktop-width) {
     flex: 0 0 calc(25% - 59px);
-    max-width: calc(25% - 59px);
+    width: calc(25% - 59px);
     margin-top: 146px;
     padding: 0 40px 37px;
   }

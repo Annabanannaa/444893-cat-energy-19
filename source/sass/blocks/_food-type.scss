@@ -48,6 +48,7 @@
   @media (min-width: $desktop-width) {
     position: relative;
     flex: 0 0 calc(50% - 40px);
+    width: calc(50% - 40px);
     padding: 44px 56px 55px 53px;
 
     & + & {

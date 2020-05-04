@@ -37,12 +37,34 @@
   text-align: center;
   border-top: 1px solid $border-grey;
 
+  &--active {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: $main-green;
+      bottom: -7px;
+    }
+  }
+
+  &--white {
+    position: relative;
+
+    &::before {
+      background-color: $white;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     border-top: none;
 
     & + & {
-      margin-left: 40px;
+      margin-left: 36px;
     }
   }
 
