@@ -44,6 +44,11 @@
     margin-top: -7px;
     margin-left: -33px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 23px;
+    margin-left: 0;
+  }
 }
 
 .present__description {
@@ -66,5 +71,7 @@
     text-align: center;
     font-family: $arial;
     font-size: 16px;
+    margin-left: 0;
+    margin-top: -27px;
   }
 }

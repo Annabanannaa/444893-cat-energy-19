@@ -7,11 +7,15 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ad9a4610-de38-4995-86cb-56e5a18c8fd6&lang=ru_RU"></script>
 </head>
 
 <body>
+
+<div style="display:none">
+  <include src="build/img/sprite.svg"></include>
+</div>
 
 <header class="page-header">
   <a class="page-header__logo-link" href="">
@@ -48,9 +52,13 @@
         <div class="product__wrapper">
           <a class="product__img-link" href="">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/chicken-small-mobile@1x.webp 1x, img/chicken-small-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
-              <img src="img/chicken-small-mobile@1x.jpg" alt="курица">
+              <img src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="курица">
             </picture>
           </a>
           <div class="product__description">
@@ -77,9 +85,13 @@
         <div class="product__wrapper">
           <a class="product__img-link" href="">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/chicken-big-mobile@1x.webp 1x, img/chicken-big-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)" srcset="img/chicken-big-desktop@1x.png  1x, img/chicken-big-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
-              <img src="img/chicken-big-mobile@1x.jpg" alt="курица">
+              <img src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="курица">
             </picture>
           </a>
           <div class="product__description">
@@ -106,9 +118,13 @@
         <div class="product__wrapper">
           <a class="product__img-link" href="">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/fish-small-mobile@1x.webp 1x, img/fish-small-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)" srcset="img/fish-small-desktop@1x.png 1x, img//fish-small-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
-              <img src="img/fish-small-mobile@1x.jpg" alt="курица">
+              <img src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x"  alt="курица">
             </picture>
           </a>
           <div class="product__description">
@@ -135,9 +151,13 @@
         <div class="product__wrapper">
           <a class="product__img-link" href="">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/fish-big-mobile@1x.webp 1x, img/fish-big-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
-              <img src="img/fish-big-mobile@1x.jpg" alt="курица">
+              <img src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="курица">
             </picture>
           </a>
           <div class="product__description">
@@ -164,9 +184,13 @@
         <div class="product__wrapper">
           <a class="product__img-link" href="">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/buckwheat-small-mobile@1x.webp 1x, img/buckwheat-small-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
-              <img src="img/buckwheat-small-mobile@1x.jpg" alt="курица">
+              <img src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="курица">
             </picture>
           </a>
           <div class="product__description">
@@ -193,9 +217,13 @@
         <div class="product__wrapper">
           <a class="product__img-link" href="">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.webp 1x, img/buckwheat-big-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/buckwheat-big-mobile@1x.webp 1x, img/buckwheat-big-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, buckwheat-big-tablet@2x.png 2x">
-              <img src="img/buckwheat-big-mobile@1x.jpg" alt="курица">
+              <img src="img/buckwheat-big-mobile@1x.jpg"  srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="курица">
             </picture>
           </a>
           <div class="product__description">
@@ -222,9 +250,13 @@
         <div class="product__wrapper">
           <a class="product__img-link" href="">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/rice-small-mobile@1x.webp 1x, img/rice-small-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
-              <img src="img/rice-small-mobile@1x.jpg" alt="курица">
+              <img src="img/rice-small-mobile@1x.jpg"  srcset="img/rice-small-mobile@2x.jpg 2x" alt="курица">
             </picture>
           </a>
           <div class="product__description">
@@ -309,7 +341,9 @@
         </div>
       </div>
       <div class="present">
-        <svg class="present__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.5 60"><path d="M52.3 12.2h-7c.5-.7.8-1.4 1.1-2.2.6-2 .4-4.1-.6-5.9-1-1.8-2.6-3.1-4.6-3.7-2-.6-4.1-.4-5.9.6-3.6 2-6.2 6.1-7.6 9-1.4-2.9-4-7.1-7.6-9-3.8-2-8.5-.6-10.5 3.1-1.4 2.7-1.2 5.8.5 8.1h-7c-1.7 0-3.1 1.4-3.1 3.1v9.4c0 1.7 1.4 3.1 3.1 3.1H4v26.1c0 3.3 2.7 6 6 6h35.5c3.3 0 6-2.7 6-6V27.8h.8c1.7 0 3.1-1.4 3.1-3.1v-9.4c.1-1.7-1.3-3.1-3.1-3.1zM36.5 3c1.3-.7 2.7-.8 4.1-.4 1.3.4 2.4 1.3 3.1 2.6.7 1.3.8 2.7.4 4.1-.4 1.2-1.1 2.2-2.2 2.9H29.4C30.5 9.6 33 5 36.5 3zM11.7 5.2C13.2 2.6 16.4 1.6 19 3c3.5 1.9 6 6.6 7.1 9.1H13.5c-2.3-1.4-3.1-4.5-1.8-6.9zm14.8 22.6v13.7H6.4V27.8h20.1zM6.4 53.9v-10h20.2v13.7H10c-2 0-3.6-1.7-3.6-3.7zm39.1 3.7H28.9V43.9h20.2v10c0 2-1.6 3.7-3.6 3.7zm3.6-16.1H28.9V27.8h20.2v13.7zm4-16.8c0 .4-.3.7-.7.7H3.2c-.4 0-.7-.3-.7-.7v-9.4c0-.4.3-.7.7-.7h49.2c.4 0 .7.3.7.7v9.4z"/></svg>
+        <svg class="present__img">
+          <use xlink:href="#icon-gift"></use>
+        </svg>
         <p class="present__description">Закажите все <br>
           и получите чехол для <br> кота в подарок!</p>
       </div>
@@ -330,19 +364,25 @@
   <ul class="page-footer__social social">
     <li class="social__item">
       <a class="social__link social__link--vk" href="#">
-        <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 12"><path d="M17.6 12c-.3 0-.9-.1-1.5-.5-.5-.3-.9-.7-1.3-1.2-.3-.3-.9-.9-1.1-.9-.2.1-.4.7-.3 1.2 0 .1 0 .6-.3.9-.3.3-.8.4-.9.4h-1.4c-.7 0-3.2-.2-5.4-2.3C2.5 7.1.2 2.2.1 2 0 1.6-.1 1.2.2.9s.8-.4 1-.4h3.1c.1 0 .4.1.7.3.3.2.4.5.5.6.7 1.5 1.5 2.8 2.6 4 .1-.4.2-1.4.1-2.3 0-.4-.1-.8-.2-1-.1-.1-.3-.2-.5-.2l-.6-.5c0-.5.5-.9.9-1.1.5-.2 1.3-.3 2.3-.3h.5c.9 0 1.2.1 1.6.1 1.2.3 1.2 1.3 1.1 2.5v1.6c0 .3 0 .8.1 1 .2-.1.6-.5 1.5-1.9.6-.9 1-1.9 1.1-2.1.1-.3.4-.7 1.2-.7h3.4c.7 0 1.2.2 1.3.7.2.5.1 1.3-1.7 3.5-.3.3-.5.6-.7.9-.5.4-.9 1-.9 1.1s.5.5.9.9c1.1.9 1.9 1.7 2.2 2.3.4.6.3 1 .2 1.3-.3.7-1.2.7-1.4.8h-2.8-.1zm-3.9-3.7c.7 0 1.2.6 1.8 1.2.4.4.7.8 1.1 1 .5.3 1 .3 1 .3h2.9c.1 0 .3-.1.4-.1 0 0 0-.1-.1-.1-.3-.5-1-1.3-2-2.1-.9-.7-1.3-1.1-1.4-1.7 0-.6.4-1.1 1.2-2.1.2-.2.4-.5.7-.8 1.1-1.4 1.4-2 1.5-2.3h-3.9c0 .4-.5 1.5-1.1 2.4-1.4 2.1-2 2.4-2.5 2.4-.1 0-.3 0-.4-.1-.7-.4-.7-1.4-.7-2.1V2.6c.1-1.3 0-1.3-.3-1.4-.3-.1-.5-.1-1.4-.1H10c-.5 0-1 0-1.4.1l.2.2c.4.5.4 1.5.4 1.7.1 1.3 0 2.9-.7 3.3-.1 0-.2.1-.4.1-.6 0-1.3-.7-2.5-2.5C5 2.9 4.5 1.8 4.5 1.8s0-.1-.1-.1-.2-.1-.2-.1h-3c.4.9 2.5 5 4.8 7.2 2 1.9 4.3 2 4.7 2h1.4s.2 0 .2-.1v-.1c0-.2 0-2 1.2-2.3h.2z"/></svg>
+        <svg class="social__icon">
+          <use xlink:href="#icon-vk"></use>
+        </svg>
         <span class="visually-hidden">Вконтакте</span>
       </a>
     </li>
     <li class="social__item">
       <a class="social__link social__link--inst" href="#">
-        <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.1 16"><path d="M11.8 1C13.6 1 15 2.4 15 4.2v7.7c0 1.7-1.4 3.1-3.1 3.1H4.2C2.4 15 1 13.6 1 11.8V4.2C1 2.4 2.4 1 4.2 1h7.6m0-1H4.2C1.9 0 0 1.9 0 4.2v7.7C0 14.1 1.9 16 4.2 16h7.7c2.3 0 4.2-1.9 4.2-4.2V4.2C16 1.9 14.1 0 11.8 0z"/><path class="st0" d="M8 4.9c1.7 0 3.1 1.4 3.1 3.1S9.7 11.1 8 11.1 4.9 9.7 4.9 8 6.3 4.9 8 4.9m0-1C5.7 3.9 3.9 5.7 3.9 8s1.8 4.1 4.1 4.1 4.1-1.8 4.1-4.1S10.3 3.9 8 3.9z"/><circle class="st0" cx="12.3" cy="3.7" r=".9"/></svg>
+        <svg class="social__icon">
+          <use xlink:href="#icon-insta"></use>
+        </svg>
         <span class="visually-hidden">Инстаграмм</span>
       </a>
     </li>
     <li class="social__item">
       <a class="social__link social__link--facebook" href="#">
-        <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 19"><path d="M7.1 19H2v-8.8H0V5.8h1.9c-.1-2 .2-3.4 1.1-4.4C3.8.5 5 .1 6.5 0H10v4.2H7.2c-.1.2-.2.8-.2 1.6h3v4.4H7.1V19zm-4-1h2.8V9.1h2.9V6.8H5.9v-.5c0-1.4 0-2.6.7-3.1l.1-.1h2.1V1H6.5c-1.2.1-2 .4-2.6 1-.8.8-1 2.3-.8 4.2l.1.6H1.1v2.3h2V18z"/></svg>
+        <svg class="social__icon">
+          <use xlink:href="#icon-fb"></use>
+        </svg>
         <span class="visually-hidden">Фейсбук</span>
       </a>
     </li>
